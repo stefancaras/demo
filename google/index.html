@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Google</title>
+		<style type="text/css">
+			body {
+				background: url(background.jpg);
+			}
+			table {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 12%;
+				text-align: center;
+			}
+			#search-box  input {
+				background-color: #121212;
+				border: 1px solid #303030;
+				color: #ffffff;
+				width: 500px;
+				height: 26px;
+				font-size: 18px;
+				padding-left: 5px;
+				padding-right: 5px;
+				vertical-align: middle;
+			}
+			#button {
+				display: inline-block;
+				background-color: #121212;
+				border: 1px solid #ffffff;
+				border-radius: 2px 2px 2px 2px;
+				width: 70px;
+				height: 32px;
+				vertical-align: middle;
+			}
+			#button:hover {
+				background-color: #303030;
+			}
+			#icon {
+				display: inline-block;
+				background: url(go.png) no-repeat;
+				height: 16px;
+				width: 16px;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>
+					<a href="https://www.google.com/ncr"><img src="logo.png" /></a>
+					<br /><br />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<form method="get" action="https://www.google.com/search" name="search" id="search-box">
+						<input name="q" autofocus>
+						<button id="button"><span id="icon"></span></button>
+					</form>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
