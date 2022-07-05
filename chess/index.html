@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <div id="board"></div>
+        <div id="settings">
+            <button id="startPositionBtn">Start position</button>
+            <button id="flipOrientationBtn">Flip board</button><br><br>
+            <p>Status: <span id="status"></span></p>
+            <p>FEN:<br><span id="fen"></span></p>
+            <p>PGN:<br><span id="pgn"></span></p>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/chessboard-1.0.0.min.js"></script>
+    <script src="js/chess.js"></script>
+    <script src="js/cinnamon_2.3.4.js"></script>
+    <script src="js/cinnamon.js"></script>
+    
+    <script>
+        $('#flipOrientationBtn').on('click', board.flip)
+        $(window).resize(board.resize)
+    </script>
+  </body>
+</html>
