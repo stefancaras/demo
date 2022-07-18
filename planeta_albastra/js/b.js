@@ -15,8 +15,10 @@ function phD(ph_p) {
     return d; 
 } 
 function rnd(val, prec) { 
-    if(rnd.arguments.length==1) prec=0; val = val * Math.pow(10,prec); 
-    val = Math.round(val); val = val / Math.pow(10,prec); 
+    if(rnd.arguments.length==1) prec=0; 
+    val = val * Math.pow(10,prec); 
+    val = Math.round(val); 
+    val = val / Math.pow(10,prec); 
     return val; 
 } 
 var tdy=new Date(); 
@@ -40,11 +42,16 @@ function cmm_dToR(d){
 } 
 function cmm_gPh(msdate) { 
     var E = new Date(Date.UTC(1990,0,1,0,0,0,0)); 
-    var dn = (msdate - E.getTime())/MSPD+1; var EL_E = 279.403303; 
-    var EL_P = 282.768422; var N = (360/365.242191) * dn; N = cmm_dAdj(N); 
-    var M = N + EL_E - EL_P; S_M = cmm_dAdj(M); 
+    var dn = (msdate - E.getTime())/MSPD+1; 
+    var EL_E = 279.403303; 
+    var EL_P = 282.768422; 
+    var N = (360/365.242191) * dn; 
+    N = cmm_dAdj(N); 
+    var M = N + EL_E - EL_P; 
+    S_M = cmm_dAdj(M); 
     var E = (360/Math.PI)*0.016713*Math.sin(cmm_dToR(S_M)); 
-    var S_L = N + E + EL_E; S_L = cmm_dAdj(S_L); 
+    var S_L = N + E + EL_E; 
+    S_L = cmm_dAdj(S_L); 
     var tmp; 
     var LO = 318.351648; 
     var PO = 36.340410; 
@@ -54,7 +61,8 @@ function cmm_gPh(msdate) {
     var N = cmm_dAdj(NO - 0.0529539*dn); 
     tmp = (2*(l - S_L))-Mm; 
     var Ev = 1.2739*Math.sin(cmm_dToR(tmp)); 
-    tmp = cmm_dToR(S_M); var Ae = 0.1858*Math.sin(tmp); 
+    tmp = cmm_dToR(S_M); 
+    var Ae = 0.1858*Math.sin(tmp); 
     var A3 = 0.37*Math.sin(tmp); 
     var Mm1 = Mm + Ev - Ae - A3; 
     var Ec = 6.2886*Math.sin(cmm_dToR(Mm1)); 
@@ -62,7 +70,8 @@ function cmm_gPh(msdate) {
     var l1 = l + Ev + Ec - Ae + A4; 
     var V = 0.6583*Math.sin(cmm_dToR(2*(l1-S_L))); 
     var mTL = l1 + V; 
-    var D = mTL - S_L; D = cmm_dAdj(D); 
+    var D = mTL - S_L; 
+    D = cmm_dAdj(D); 
     var F = 0.5*(1-Math.cos(cmm_dToR(D))); 
     F = F*100; 
     var tmp = new Object(); 
