@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="main">
+    <h1 id="title" class="center">Survey</h1>
+    <p id="description" class="center">This is a survey about the most popular programming languages.<p>
+    
+    <form id="survey-form">
+    
+    <label for="name" id="name-label">Full name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+    
+    <label for="email" id="email-label">E-mail address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email"><br>
+    
+    <label for="age" id="number-label">Age:</label>
+    <input type="number" id="number" name="age" min="1" max="150" placeholder="Age"><br>
+    
+    <p>What is your programming skill level?</p>
+    <select id="dropdown" name="skill" required>
+    <option disabled selected value>Level</option>
+    <option value="beginner">beginner</option>
+    <option value="intermediate">intermediate</option>
+    <option value="advanced">advanced</option>
+    <option value="expert">expert</option>
+    </select>
+    <br>
+    
+    <p>What is your favourite programming language?
+    <span>(Check all that apply)</span>
+    </p>
+    
+    <label><input name="lang" value="c" type="checkbox" />C</label>
+    <label><input name="lang" value="c++" type="checkbox" />C++</label>
+    <label><input name="lang" value="c#" type="checkbox" />C#</label>
+    <label><input name="lang" value="python" type="checkbox" />Python</label>
+    <label><input name="lang" value="java" type="checkbox" />Java</label>
+    <label><input name="lang" value="lavascript" type="checkbox" />JavaScript</label>
+    <label><input name="lang" value="go" type="checkbox" />Go</label>
+    <label><input name="lang" value="swift" type="checkbox" />Swift</label>
+    <label><input name="lang" value="php" type="checkbox" />PHP</label><br>
+    
+    <p>If you could not find your favourite programming languages in the list, please enter them below:</p>
+    <textarea id="comments" name="lang" placeholder="Other programming languages"></textarea><br>
+    
+    <p>Do you want to learn another programming language?</p>
+    <label><input name="learn" value="yes" type="radio" checked />Yes</label>
+    <label><input name="learn" value="no" type="radio" />No</label>
+    <label><input name="learn" value="not-sure" type="radio" />Not sure</label>
+    <br>
+    
+    <input type="submit" id="submit">
+    </form>
+    </main>
+</body>
+</html>
