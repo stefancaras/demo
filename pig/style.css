@@ -1,0 +1,71 @@
+.head {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.ear {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: -1;
+}
+#ear1 {
+    left: 0;
+}
+#ear2 {
+    right: 0;
+}
+.eye {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 20px;
+}
+#eye1 {
+    left: 17px;
+}
+#eye2 {
+    right: 17px;
+}
+.pupil {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: black;
+    top: 6px;
+    left: 6px;
+}
+.nose {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background-color: #f57188;
+    border: 1px solid black;
+    border-radius: 35%;
+    top: 50px;
+    left: 25px;
+}
+.nostril {
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    background-color: black;
+    border-radius: 50%;
+    top: 7px;
+}
+#nostril1 {
+    left: 6px;
+}
+#nostril2 {
+    right: 6px;
+}
