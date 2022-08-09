@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#red,
+#green,
+#blue,
+#rainbow {
+    width: 400px;
+    height: 50px;
+    margin: 30px;
+    box-shadow: 0 0 20px 10px;
+}
+#red {
+    background: linear-gradient(rgb(100,0,0),rgb(255,0,0),rgb(100,0,0));
+}
+#green {
+    background: linear-gradient(rgb(0,100,0),rgb(0,255,0),rgb(0,100,0));
+}
+#blue {
+    background: linear-gradient(rgb(0,0,100),rgb(0,0,255),rgb(0,0,100));
+}
+#rainbow {
+    background: linear-gradient(to right, rgb(255,0,0),rgb(0,255,0),rgb(0,0,255));
+}
+.sleeve {
+    width: 200px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.5);
+    border-left: 20px double black;
+    margin-left: 150px;
+}
