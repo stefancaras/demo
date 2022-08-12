@@ -13,78 +13,55 @@ body {
     -webkit-text-stroke: 3px #f8ec24;
     font-weight: 1000;
     font-size: 150px;
+    min-height: 1100px;
+    min-width: 1100px;
 }
-#container {
-    width: 100%;
-    padding-top: 100px ;
-}
-#very-outer-circle {
-    position: absolute;
-    width: 990px;
-    height: 990px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 15px solid #142e53;
-    border-radius: 50%;
-    top: -60px;
-    left: -60px;
-}
-#outer-circle {
-    position: absolute;
-    width: 960px;
-    height: 960px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 46px solid #f8ec24;
-    border-radius: 50%;
-    top: -45px;
-    left: -45px;
-}
-#inner-circle {
-    display: flex;
+#circle {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 870px;
     height: 870px;
     background-color: #142e53;
     border-radius: 50%;
-    margin: auto;
+    top: 100px;
+    left: 100px;
 }
 #hline {
+    position: absolute;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 180px;
     width: 100%;
     background-color: #db2929;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px;
 }
 #vline {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 870px;
-    width: 180px;
-    background-color: #db2929;
-    left: 345px;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 180px;
+    background-color: #db2929;
     padding: 20px;
 }
 #star {
-    position: absolute;
+    position: relative;
     width: 500px;
     height: 800px;
     transform: rotate(22.5deg);
-    top: 35px;
-    left: 185px;
 }
-
 #triangle {
     position: absolute;
     width: 500px;
     height: 500px;
-    box-sizing: border-box;
-    border: 250px solid rgba(0,0,0,0);
-    border-bottom: 250px solid #f8ec24;
+    border: 250px solid;
+    border-color: transparent transparent #f8ec24 transparent;
 }
 #triangle:nth-child(1){
     transform: rotate(180deg);
@@ -99,4 +76,14 @@ body {
     transform: rotate(270deg);
     top: 150px;
     left: -150px;
+}
+#outer-circle {
+    position: absolute;
+    width: 870px;
+    height: 870px;
+    background-color: transparent;
+    box-shadow: 
+        0 0 0 45px #f8ec24,
+        0 0 0 60px #142e53;
+    border-radius: 50%;
 }

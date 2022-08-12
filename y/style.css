@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+body {
+    background: lightgreen;
+}
+div {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: 50px solid yellow;
+    border-radius: 50%;
+}
+h1 {
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background: yellow;
+    transform: rotate();
+}
