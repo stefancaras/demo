@@ -1,9 +1,9 @@
 div {
     border: 1px black solid;
     background: radial-gradient(red 10%, 
-    orange 10%, orange 20%, yellow 20%, yellow 30%, 
-    green 30%, green 40%, blue 40%, blue 50%, 
-    indigo 50%, indigo 60%, violet 60%, violet 70%);
+    orange 10% 20%, yellow 20% 30%, 
+    green 30% 40%, blue 40% 50%, 
+    indigo 50% 60%, violet 60%);
     width: 500px;
     height: 500px;
     border-radius: 50%;
