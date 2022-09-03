@@ -1,49 +1,54 @@
-label {
-    display: block;
-    margin: 10px;
-}
-
-input {
-    background-color: #0a0a23;
-    width: 100%;
-    padding: 5px;
-    color: white;
-    border: none;
-}
-input[type="checkbox"],
-input[type="radio"]{
-    width: unset;
-}
-input[type="submit"]{
-    width: 60%;
-    display: block;
-    margin: 20px auto;
-    border: 1px white solid;
-    color: white;
-    font-size: 1.2rem;
+* {
+    box-sizing: border-box;
 }
 body {
     background-color: #1b1b32;
     color: white;
-    width: 500px;
-    margin: auto;
 }
-fieldset {
-    border: none;
-}
-hr {
-    border-color: rgb(87, 88, 184);
-    height: 2px;
-    background-color: rgb(159, 159, 211);
-}
-h1, p {
+h1,
+p {
     text-align: center;
+    margin: 30px;
 }
-textarea {
-    background-color: rgb(20, 20, 48);
-    width: 99%;
-}
+input:not(.inline),
+textarea,
 select {
     width: 100%;
+    background-color: #0a0a23;
+    border: none;
+    padding: 8px;
+    margin: 10px 0;
+    color: white;
+}
+input[type=file] {
+    padding: 5px;
+}
+label {
+    display: block;
+    margin: 10px 0;
+}
+hr {
+    height: 3px;
+    background-color: #3b3b4f;
+    border: none;
+    margin: 40px 0;
+}
+a {
+    color: white;
+}
+button {
+    display: block;
+    width: 60%;
     height: 2rem;
+    border: 1px solid White;
+    background-color: #3b3b4f;
+    color: white;
+    font-size: 1.1rem;
+    margin: 60px auto;
+}
+#container {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
 }
