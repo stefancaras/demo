@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: sans-serif;
   background-color: #222222;
@@ -55,6 +60,7 @@ label {
 .btn {
   background-color: #444444;
   color: white;
+  width: 5rem;
   height: 2rem;
   border: none;
   border-radius: 5px;
@@ -90,9 +96,10 @@ label {
 #sidebar {
   flex: 1;
   align-self: flex-start;
+  margin-left: 20px;
 }
 #container {
-  flex: 5;
+  flex: 10;
 }
 #search {
   height: 1.6rem;

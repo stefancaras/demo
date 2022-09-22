@@ -9,7 +9,7 @@ const createCardFromProduct = (product) => {
 };
 
 const getProductsOnIndexPage = () => {
-	fetch('./json/fiction.json')
+	fetch('./json/books.json')
 		.then((result) => result.json())
 		.then((products) => {
 			const productCards = products.map((product) =>
