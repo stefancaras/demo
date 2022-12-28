@@ -11,11 +11,11 @@ export default function Navbar() {
         </a>
         <form id="searchForm">
           <input type="text" placeholder="Search.." id="search" />
-          <a className="btn searchBtn" href="search.html"><i className="fas fa-search marginRight"></i>Search</a>
+          <a className="btn btn-danger searchBtn" href="search.html"><i className="fas fa-search marginRight"></i>Search</a>
         </form>
         <div>
-          <a className="btn" href="cart.html"><i className="fas fa-basket-shopping marginRight"></i>Basket</a>
-          <a className="btn" href="admin.html"><i className="fas fa-lock marginRight"></i>Admin</a>
+          <a className="btn btn-info" href="cart.html"><i className="fas fa-basket-shopping marginRight"></i>Basket</a>
+          <a className="btn btn-warning" href="admin.html"><i className="fas fa-lock marginRight"></i>Admin</a>
         </div>
       </div>
     );
