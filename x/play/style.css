@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+}
+.container {
+  display: flex;
+  height: 80vh;
+}
+.panel {
+  position: relative;
+  background-size: cover;
+  width: 15vw;
+  margin: 10px;
+  border-radius: 50px;
+  flex: 1;
+  transition: flex 1s ease-in;
+  cursor: pointer;
+}
+.panel.active {
+  flex: 10;
+}
+.panel.active h3 {
+  opacity: 1;
+}
+h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in 0.5s;
+}

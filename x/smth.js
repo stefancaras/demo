@@ -1,19 +1,16 @@
-let root = { val: 3, left: { val: 9, left: null, right: null }, right: { val: 20, left: { val: 15, left: null, right: null }, right: { val: 7, left: null, right: null } } }
+const array = [23, 76, 45, 32, 1, 100, 83, 47, 65, 12];
+let bool = true;
 
-var maxDepth = function (root) {
-  let result = []
-  let count = 0
-  const inorder = (root) => {
-    if (!root) {
-      return
+while (bool) {
+  bool = false;
+  for (let i = 0; i < array.length - 1; i++) {
+    if (array[i] > array[i + 1]) {
+      let tmp = array[i];
+      array[i] = array[i + 1];
+      array[i + 1] = tmp;
+      bool = true;
     }
-    count++
-    inorder(root.left)
-    if (!root.left && !root.right) result.push(count)
-    inorder(root.right)
-    count--
   }
-  inorder(root)
-  return result
-};
-console.log(maxDepth(root))
+}
+
+console.log(array);

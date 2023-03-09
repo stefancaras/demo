@@ -1,2 +1,5 @@
-let array = [1, 2]
-console.log(array["1"])
+let string = "The greatest show on Earth";
+const removeVowels = (string) => {
+  return string.replace(/[aeiou]/gi, "");
+};
+console.log(removeVowels(string));
