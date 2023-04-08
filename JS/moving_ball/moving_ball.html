@@ -29,10 +29,10 @@
       var j = 450;
       function move() {
         if (i < 450) {
-          ball.style.left = i++ + "px";
+          ball.style.left = ++i + "px";
         } else if (j > 0) {
-          ball.style.left = j-- + "px";
-        } else if (j === 0) {
+          ball.style.left = --j + "px";
+        } else {
           i = 0;
           j = 450;
         }

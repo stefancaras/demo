@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto";
+  font-size: 56px;
+  color: white;
+}
+.container {
+  width: fit-content;
+  margin: auto;
+}
+.clock {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(gray 0, black 250px);
+  border-radius: 50%;
+}
+.hour {
+  height: 120px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: black;
+  transform: translate(-50%, -100%);
+}
+.minute {
+  height: 170px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: black;
+  transform: translate(-50%, -100%);
+}
+.second {
+  height: 170px;
+  width: 5px;
+  border-radius: 3px;
+  background-color: red;
+  transform: translate(-50%, -100%);
+}
+.time {
+  position: absolute;
+  padding: 20px 35px;
+}
+.twelve {
+  left: 50%;
+  transform: translate(-50%);
+}
+.three {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.six {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+}
+.nine {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line {
+  height: 440px;
+  width: 10px;
+  background: linear-gradient(white 40px, transparent 41px 399px, white 400px);
+}
+.oneSeven {
+  transform: translate(-50%, -50%) rotate(30deg);
+}
+.twoEight {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.fourTen {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+.fiveEleven {
+  transform: translate(-50%, -50%) rotate(150deg);
+}
+.bullet {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.redBullet {
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.origin {
+  transform-origin: bottom center;
+}
