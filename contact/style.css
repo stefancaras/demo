@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu";
+  background: #d2d0dd;
+}
+h2,
+p {
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin: 10px 60px 15px 0;
+}
+button {
+  background: #7f56da;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid rgb(176, 176, 176);
+  border-radius: 5px;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+.container {
+  position: relative;
+  display: flex;
+  width: 1000px;
+  height: 800px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  background-color: #53389f;
+  padding: 40px;
+  color: white;
+}
+.left a {
+  color: white;
+}
+.right {
+  flex: 2;
+  background-color: white;
+  padding: 30px 100px;
+}
+.right a {
+  color: #53389f;
+}
+.d-flex {
+  display: flex;
+}
+.baseline {
+  align-items: baseline;
+}
+.mt-auto {
+  margin-top: auto;
+}
+.fa-solid {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-brands {
+  margin-right: 20px;
+  font-size: 30px;
+}
+.pink {
+  color: #bea6ff;
+}
+.gray {
+  color: gray;
+}
+.dots {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+.red,
+.yellow,
+.green {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.red {
+  background-color: #f36d64;
+}
+.yellow {
+  background-color: #fbc352;
+}
+.green {
+  background-color: #5cc851;
+}
