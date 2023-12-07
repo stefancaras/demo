@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squares</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: black;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 210px;
+        width: fit-content;
+      }
+      p {
+        width: 20px;
+        height: 20px;
+        background: #11161c;
+        border: 5px solid;
+        border-radius: 10px;
+        margin: 0;
+      }
+      .green {
+        background: #237235;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="container"></section>
+    <script>
+      document.querySelector("#container").innerHTML = "<p></p>".repeat(231);
+      document.querySelector("#container").addEventListener("click", (e) => {
+        if (!e.target.id) e.target.classList.toggle("green");
+      });
+    </script>
+  </body>
+</html>
