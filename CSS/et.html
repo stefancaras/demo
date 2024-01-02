@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E.T.</title>
+    <style>
+      .container,
+      .head,
+      .eyes {
+        position: absolute;
+      }
+      .container {
+        width: 90vh;
+        height: 90vh;
+        background: #000;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .head {
+        height: 60%;
+        width: 60%;
+        background: #888;
+        border-radius: 50%50%50%20%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+      .eyes {
+        height: 15%;
+        width: 20%;
+        background: #000;
+        border-radius: 10%90%;
+        top: 47%;
+        left: 25%;
+        -webkit-box-reflect: right 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head"></div>
+      <div class="eyes"></div>
+    </div>
+  </body>
+</html>
