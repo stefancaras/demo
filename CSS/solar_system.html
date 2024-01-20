@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar system</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #1c2542;
+      }
+      #solar-system {
+        position: relative;
+        height: 100vh;
+      }
+      #solar-system div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+      #solar-system div::before {
+        content: "";
+        position: inherit;
+        border-radius: 50%;
+      }
+      #sun {
+        width: 1400px;
+        height: 1400px;
+        background: #a41d22;
+        border: 0 !important;
+        box-shadow: 0 0 100px 10px #a41d22;
+      }
+      #mercury {
+        width: 18px;
+        height: 18px;
+        animation: rotation 0.9s linear infinite;
+      }
+      #mercury::before {
+        width: 5px;
+        height: 5px;
+        background: #bfbdbc;
+        top: 6px;
+        left: -3px;
+      }
+      #venus {
+        width: 33px;
+        height: 33px;
+        animation: rotation 2.2s linear infinite;
+      }
+      #venus::before {
+        width: 12px;
+        height: 12px;
+        background: #f3dbc3;
+        top: 10px;
+        left: -6px;
+      }
+      #earth {
+        width: 45px;
+        height: 45px;
+        animation: rotation 3.6s linear infinite;
+      }
+      #earth::before {
+        width: 13px;
+        height: 13px;
+        background: #416b8f;
+        top: 16px;
+        left: -7px;
+      }
+      #mars {
+        width: 69px;
+        height: 69px;
+        animation: rotation 6.9s linear infinite;
+      }
+      #mars::before {
+        width: 7px;
+        height: 7px;
+        background: #f27c5f;
+        top: 31px;
+        left: -4px;
+      }
+      #jupiter {
+        width: 234px;
+        height: 234px;
+        animation: rotation 43.3s linear infinite;
+      }
+      #jupiter::before {
+        width: 143px;
+        height: 143px;
+        background: #a6705b;
+        top: 45px;
+        left: -72px;
+      }
+      #saturn {
+        width: 429px;
+        height: 429px;
+        animation: rotation 107.5s linear infinite;
+      }
+      #saturn::before {
+        width: 120px;
+        height: 120px;
+        background: #c1a480;
+        top: 154px;
+        left: -60px;
+      }
+      #saturn::after {
+        content: "";
+        position: inherit;
+        width: 30px;
+        height: 160px;
+        border: 30px solid #dab778;
+        border-radius: 50%;
+        top: 104px;
+        left: -45px;
+        clip-path: polygon(
+          0 0,
+          100% 0,
+          100% 68px,
+          45px 45px,
+          45px 175px,
+          100% 152px,
+          100% 100%,
+          0 100%
+        );
+      }
+      #uranus {
+        width: 867px;
+        height: 867px;
+        animation: rotation 306.6s linear infinite;
+      }
+      #uranus::before {
+        width: 52px;
+        height: 52px;
+        background: #cfecf0;
+        top: 407px;
+        left: -26px;
+      }
+      #neptune {
+        width: 1350px;
+        height: 1350px;
+        animation: rotation 601.5s linear infinite;
+      }
+      #neptune::before {
+        width: 48px;
+        height: 48px;
+        background: #789ebf;
+        top: 601px;
+        left: -24px;
+      }
+      @keyframes rotation {
+        from {
+          transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="solar-system">
+      <div id="sun"></div>
+      <div id="mercury"></div>
+      <div id="venus"></div>
+      <div id="earth"></div>
+      <div id="mars"></div>
+      <div id="jupiter"></div>
+      <div id="saturn"></div>
+      <div id="uranus"></div>
+      <div id="neptune"></div>
+    </div>
+  </body>
+</html>
